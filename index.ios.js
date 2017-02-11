@@ -19,7 +19,7 @@ const defaultRoute = {
   component: Splash
 };
 
-class APPDEMO extends Component {
+class Navigation extends Component {
   _renderScene(route, navigator) {
     let Component = route.component;
     return (
@@ -46,7 +46,7 @@ class APPDEMO extends Component {
             <TouchableOpacity
               onPress={() => navigator.pop()}
               style={styles.button}>
-              <Text style={styles.buttonText}>Back</Text>
+              <Text style={styles.buttonText}>后退</Text>
             </TouchableOpacity>
           );
         } else {
@@ -128,4 +128,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('APPDEMO', () => APPDEMO);
+AppRegistry.registerComponent('APPDEMO', () => Navigation);
